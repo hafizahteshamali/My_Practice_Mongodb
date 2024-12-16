@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const PORT = process.env.PORT;
-const MONGODB_URI = mongodb+srv://hafizahteshamali363617:Intelligence363617@all-databases.ffshj.mongodb.net/Practice_Database_For_Tasks;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 app.get('/', (req, res)=>{
     res.send("Welcome to Backend");
